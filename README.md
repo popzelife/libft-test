@@ -19,3 +19,8 @@ Just enter those few arguments while executing the code:
 If you enter no argument, everything will be debbug.  
  * *'exit'* ; tape exit to go back to normal mode.  
 * **help** = show this help file  
+
+### TO DO:  
+Few things left to do!
+* Need bonus test functions
+* The debugging mode...
