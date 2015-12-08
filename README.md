@@ -1,5 +1,6 @@
 # Libft Test  
-Test your libft functions made at 42 with this piece of code. Clone it into your libft folder in a subfolder; and execute "make test". This test was made by myself and thanks to the help of other tests like the moulitest or unittest.
+Test your libft functions made at 42 school with this piece of code. Clone it somewhere. Open the Makefile and specify your libft.a location, and open in 'includes' folder, the libft_test.h to relocate your libft.h file too. Then execute "make test"; you can run the test.out.
+This test was made by myself and sometimes thanks to the help of other tests like the moulitest or unittest. You should have compiled your librairies first before using this test.
 
 ![example](https://raw.githubusercontent.com/Kant1-0/libft-test/master/img-test.png)
 

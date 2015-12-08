@@ -6,7 +6,7 @@
 /*   By: qfremeau <qfremeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/05 18:43:23 by qfremeau          #+#    #+#             */
-/*   Updated: 2015/12/08 11:00:58 by qfremeau         ###   ########.fr       */
+/*   Updated: 2015/12/08 16:35:13 by qfremeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <setjmp.h>
-#include "../../libft.h"
+#include "../../libft/libft.h"
 
 void	test_exc(void (*f)(void));
 
