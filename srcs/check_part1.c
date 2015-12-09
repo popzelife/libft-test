@@ -6,7 +6,7 @@
 /*   By: qfremeau <qfremeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/07 16:48:56 by qfremeau          #+#    #+#             */
-/*   Updated: 2015/12/08 14:54:49 by qfremeau         ###   ########.fr       */
+/*   Updated: 2015/12/08 18:21:48 by qfremeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,8 +139,11 @@ void	atoi_main(void)
 					{
 						if (ft_atoi(str6) == i6)
 						{
-							printf(KGRN "OKAY! =D\n" RESET);
-							return;
+							if (ft_atoi(str7) == i7)
+							{
+								printf(KGRN "OKAY! =D\n" RESET);
+								return;
+							}
 						}
 					}
 				}
@@ -444,7 +447,6 @@ void	strnstr_main(void)
 void	strchr_main(void)
 {
 	char a[20] = "Hello World!";
-	char b[2] = "";
 
 	if ((strcmp(strchr(a, 'e'), ft_strchr(a, 'e'))) == 0)
 	{

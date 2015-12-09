@@ -6,7 +6,7 @@
 /*   By: qfremeau <qfremeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/07 16:49:46 by qfremeau          #+#    #+#             */
-/*   Updated: 2015/12/08 14:28:50 by qfremeau         ###   ########.fr       */
+/*   Updated: 2015/12/08 18:02:24 by qfremeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -584,7 +584,6 @@ void			memdel_main(void)
 void			memalloc_main(void)
 {
 	size_t		len = 100;
-	size_t		i = 0;
 	void		*mem1, *mem2;
 
 	mem1 = malloc(len);
