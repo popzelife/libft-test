@@ -6,29 +6,13 @@
 /*   By: qfremeau <qfremeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:08:39 by qfremeau          #+#    #+#             */
-/*   Updated: 2015/12/07 17:02:32 by qfremeau         ###   ########.fr       */
+/*   Updated: 2015/12/10 12:35:17 by qfremeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include "../includes/libft_test.h"
 
-#include "libft.h"
-
-#include <setjmp.h>
- 
-#define TRY do{ jmp_buf ex_buf; switch( setjmp(ex_buf) ){ case 0: while(1){
-#define CATCH(x) break; case x:
-#define FINALLY break; } default:
-#define ETRY } }while(0)
-#define THROW(x) longjmp(ex_buf, x)
- 
-#define MISMATCH_EXCEPTION (1)
-#define NULL_EXCEPTION (2)
-#define TYPE_EXCEPTION (3)
-
-int		isprint_main(void)
+int		isprint_debug(void)
 {
 	int		i;
 
@@ -49,7 +33,7 @@ int		isprint_main(void)
 	return (1);
 }
 
-int		toupper_main(void)
+int		toupper_debug(void)
 {
 	int		i;
 
@@ -70,7 +54,7 @@ int		toupper_main(void)
 	return (1);
 }
 
-int		tolower_main(void)
+int		tolower_debug(void)
 {
 	int		i;
 
@@ -91,7 +75,7 @@ int		tolower_main(void)
 	return (1);
 }
 
-int		isalnum_main(void)
+int		isalnum_debug(void)
 {
 	printf("*****isalnum******\n");
 	printf("Test a  =  %d\n", isalnum('a'));
@@ -106,7 +90,7 @@ int		isalnum_main(void)
 	return (1);
 }
 
-int		isdigit_main(void)
+int		isdigit_debug(void)
 {
 	printf("*****isdigit******\n");
 	printf("Test a  =  %d\n", isdigit('a'));
@@ -121,7 +105,7 @@ int		isdigit_main(void)
 	return (1);
 }
 
-int		isascii_main(void)
+int		isascii_debug(void)
 {
 	printf("*****isascii******\n");
 	printf("Test a     =  %d\n", isascii('a'));
@@ -134,7 +118,7 @@ int		isascii_main(void)
 	return (1);
 }
 
-int		isalpha_main(void)
+int		isalpha_debug(void)
 {
 	printf("*****isalpha******\n");
 	printf("Test a  =  %d\n", isalpha('a'));
@@ -149,7 +133,7 @@ int		isalpha_main(void)
 	return (1);
 }
 
-int		memset_main(void)
+int		memset_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Hello World!";
@@ -162,7 +146,7 @@ int		memset_main(void)
 	return (1);
 }
 
-int		strdup_main(void)
+int		strdup_debug(void)
 {
 	char a[20] = "Hello World!";
 
@@ -172,7 +156,7 @@ int		strdup_main(void)
 	return (1);
 }
 
-int		itoa_main(void)
+int		itoa_debug(void)
 {
 	int i1 = 5;
 	int i2 = 201;
@@ -202,7 +186,7 @@ int		itoa_main(void)
 	return (1);
 }
 
-/*int		atoi_main(void)
+int		atoi_debug(void)
 {
 	int i1;
 	int i2; 
@@ -234,9 +218,9 @@ int		itoa_main(void)
 	printf("%d  =  %s\n", i6, str6);
 	printf("%d  =  %s\n", i7, str7);
 	return (1);
-}*/
+}
 
-int		memchr_main(void)
+int		memchr_debug(void)
 {
 	char a[20] = "Hello World!";
 
@@ -257,7 +241,7 @@ int		memchr_main(void)
 	return (1);
 }
 
-int		memmove_main(void)
+int		memmove_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Smile";
@@ -276,7 +260,7 @@ int		memmove_main(void)
 	return (1);
 }
 
-int		strcmp_main(void)
+int		strcmp_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Hello world!";
@@ -305,7 +289,7 @@ int		strcmp_main(void)
 }
 
 
-int		strncmp_main(void)
+int		strncmp_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Hello world!";
@@ -333,7 +317,7 @@ int		strncmp_main(void)
 	return (1);
 }
 
-int		strstr_main(void)
+int		strstr_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "";
@@ -361,7 +345,7 @@ int		strstr_main(void)
 	return (1); 
 }
 
-int		strchr_main()
+int		strchr_debug(void)
 {
 	char a[20] = "Hello World!";
 	int i1 = 'r';
@@ -371,7 +355,7 @@ int		strchr_main()
 	return (1);
 }
 
-int		memcpy_main(void)
+int		memcpy_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "!dlroW olleH";
@@ -390,7 +374,7 @@ int		memcpy_main(void)
 	return (1);
 }
 
-int		memccpy_main(void)
+int		memccpy_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Smile Everyday";
@@ -427,7 +411,7 @@ int		memccpy_main(void)
 	return (1);
 }
 
-int		memalloc_main(void)
+int		memalloc_debug(void)
 {
 	size_t size = 20;
 	char *src;
@@ -444,7 +428,7 @@ int		memalloc_main(void)
 	return (1);
 }
 
-int		bzero_main(void)
+int		bzero_debug(void)
 {
 	char a[20] = "Hello World!";
 	char b[20] = "Hello World!";
@@ -457,7 +441,7 @@ int		bzero_main(void)
 	return (1);
 }
 
-int		strcat_main(void)
+int		strcat_debug(void)
 {
 	char	a[8]="Hello ";
 	char	b[8]="World!";
@@ -477,7 +461,7 @@ int		strcat_main(void)
 	return (1);
 }
 
-int		strncat_main(void)
+int		strncat_debug(void)
 {
 	char	a[12]="Hello World";
 	char	b[12]=" and Smile!";
@@ -497,7 +481,7 @@ int		strncat_main(void)
 	return (1);
 }
 
-int		strlcat_main(void)
+int		strlcat_debug(void)
 {
 	char	a[13]="Hello World ";
 	char	b[12]="and Smile!";
@@ -554,64 +538,3 @@ int		main(int argc, char const *argv[])
 	}
 	parse_cmdline(argc - 1, argv + 1);
 }*/
-
-int main(void)
-{
-	printf("===========isprint===========\n");
-	isprint_main();
-	printf("\n\n===========isalnum===========\n");
-	isalnum_main();
-	printf("\n\n===========isdigit===========\n");
-	isdigit_main();
-	printf("\n\n===========isascii===========\n");
-	isascii_main();
-	printf("\n\n===========isalpha===========\n");
-	isalpha_main();
-
-	printf("\n\n===========itoa===========\n");
-	itoa_main();
-	//printf("\n\n===========atoi===========\n");
-	//atoi_main();
-
-	//printf("\n\n===========toupper===========\n");
-	//toupper_main();
-	//printf("\n\n===========tolower===========\n");
-	//tolower_main();
-
-	TRY
-	{
-		printf("\n\n===========strcat===========\n");
-		strcat_main();
-	}
-	//printf("\n\n===========strncat===========\n");
-	//strncat_main();
-	printf("\n\n===========strlcat===========\n");
-	strlcat_main();
-	printf("\n\n===========strstr===========\n");
-	strstr_main();
-	printf("\n\n===========strchr===========\n");
-	strchr_main();
-	printf("\n\n===========strdup===========\n");
-	strdup_main();
-	printf("\n\n===========strcmp===========\n");
-	strcmp_main();
-	printf("\n\n===========strncmp===========\n");
-	strncmp_main();
-
-	printf("\n\n===========bzero===========\n");
-	bzero_main();
-	printf("\n\n===========memset===========\n");
-	memset_main();
-	printf("\n\n===========memchr===========\n");
-	memchr_main();
-	printf("\n\n===========memmove===========\n");
-	memmove_main();
-	printf("\n\n===========memcpy===========\n");
-	memcpy_main();
-	printf("\n\n===========memccpy===========\n");
-	memccpy_main();
-	printf("\n\n===========memalloc===========\n");
-	memalloc_main();
-
-	return 0;
-}

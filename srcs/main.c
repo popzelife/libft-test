@@ -6,7 +6,7 @@
 /*   By: qfremeau <qfremeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:08:39 by qfremeau          #+#    #+#             */
-/*   Updated: 2015/12/08 15:26:50 by qfremeau         ###   ########.fr       */
+/*   Updated: 2015/12/10 12:51:55 by qfremeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,6 +139,18 @@ static void		test_part2(void)
 static void		test_bonus()
 {
 	printf(KORG "\n==============TESTING-BONUS==============\n" RESET);
+	printf("\nTesting lstadd functions:------");
+	test_exc(lstadd_main);
+	printf("Testing lstdel functions:------");
+	test_exc(lstdel_main);
+	printf("Testing lstdelone functions:---");
+	test_exc(lstdelone_main);
+	printf("Testing lstiter functions:-----");
+	test_exc(lstiter_main);
+	printf("Testing lstmap functions:------");
+	test_exc(lstmap_main);
+	printf("Testing lstnew functions:------");
+	test_exc(lstnew_main);
 	printf("\n");
 }
 
