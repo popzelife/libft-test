@@ -24,4 +24,4 @@ If you enter no argument, everything will be debbug.
 Few things left to do!
 * The debugging mode to complete... Debug mode is meant to show the difference between the output of your ft_function and the libc function (or what should have been output).
 * Add a function able to get/catch the user input and give a debugging result of the function on screen.
-* Handle a way to skip functions that were not yet created by user.
+* Handle a way to skip functions that were not yet created by user in debug mode.
